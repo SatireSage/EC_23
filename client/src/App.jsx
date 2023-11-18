@@ -1,15 +1,7 @@
-import InputField from "./InputField";
+import SignUp from "./Pages/SignUp";
 
 function App() {
-  return (
-    <div>
-      <form className="w-full h-full flex justify-center items-center bg-white">
-        <InputField name="First Name" />
-        <InputField name="Last Name" />
-        <InputField name="Phone Number" />
-      </form>
-    </div>
-  );
+  return <SignUp />;
 }
 
 export default App;
