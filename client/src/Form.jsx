@@ -9,7 +9,7 @@ function Form() {
   function handleSubmit(event) {
     event.preventDefault();
 
-    fetch("https://localhost:5000", {
+    fetch("http://localhost:5000", {
       method: "POST",
       body: JSON.stringify({
         phoneNumber: phoneNumber,
