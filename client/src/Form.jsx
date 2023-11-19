@@ -5,7 +5,7 @@ function Form() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
-  const [isFormVisible, setIsFormVisible] = useState(true); // New state variable
+  const [isFormVisible, setIsFormVisible] = useState(true);
 
   function handleSubmit(event) {
     event.preventDefault();
