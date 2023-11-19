@@ -7,11 +7,11 @@ import os
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 
-link = "http://207.23.186.174:5173/location"
+link = "https://satiresage.github.io/EC_23/location"
 
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "http://localhost:5173"}})
+CORS(app, resources={r"/*": {"origins": "https://satiresage.github.io/EC_23/"}})
 
 
 @app.route("/process_phone_number", methods=["POST"])
