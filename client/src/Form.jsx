@@ -29,7 +29,10 @@ function Form() {
   if (!isFormVisible) {
     return (
       <div className="z-20 p-2 flex w-fit flex-col justify-center items-center gap-4 shadow-md shadow-gray-800 rounded-md pb-4 bg-[#8ecae6]">
-        <h2 className="w-full font-bold text-white text-center text-2xl rounded-md p-4 bg-blue-400"><p>Thank You!</p><p>Your information has been submitted successfully.</p></h2>
+        <h2 className="w-full font-bold text-white text-center text-2xl rounded-md p-4 bg-blue-400">
+          <p>Thank You!</p>
+          <p>Your information has been submitted successfully.</p>
+        </h2>
       </div>
     );
   }
