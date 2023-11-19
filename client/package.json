@@ -1,6 +1,5 @@
 {
   "name": "client",
-  "homepage": "https://SatireSage.github.io/EC_23",
   "private": true,
   "version": "0.0.0",
   "type": "module",

@@ -5,7 +5,7 @@ import { loadFull } from "tsparticles";
 
 function Location() {
   const [mapSrc, setMapSrc] = useState("");
-  const destination = "13450+102+Dr,+Burnaby,+BC+V3T+0A3"; // SFU Burnaby
+  const destination = "13450+102+Dr,+Burnaby,+BC+V3T+0A3";
   const apiKey = "AIzaSyCzaZV9j_747A-c9_nAAMkIQq6U1kAfVD8";
 
   const init = useCallback(async (engine) => {
