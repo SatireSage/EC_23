@@ -4,12 +4,12 @@ import Location from "./Location";
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter basename={"/EC_23/"}>
       <Routes>
         <Route path="/" element={<SignUp />} /> {/* SignUp route */}
         <Route path="/location" element={<Location />} /> {/* New page route */}
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 
