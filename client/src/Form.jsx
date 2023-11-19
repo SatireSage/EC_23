@@ -9,7 +9,7 @@ function Form() {
   function handleSubmit(event) {
     event.preventDefault();
 
-    fetch("http://localhost:5000", {
+    fetch("https://cors-anywhere.herokuapp.com/http://localhost:5000/process_phone_number", {
       method: "POST",
       body: JSON.stringify({
         phoneNumber: phoneNumber,
