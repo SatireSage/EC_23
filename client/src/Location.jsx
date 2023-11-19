@@ -30,26 +30,21 @@ function Location() {
   }, []);
 
   return (
-    <div className="w-full h-full flex flex-col justify-center items-center bg-[#023047]">
-      <h1>Directions to SFU Surrey</h1>
+    <div className="w-full h-full flex flex-col justify-center items-center gap-4 bg-[#023047]">
+      <h1 className="text-5xl text-white">Directions to SFU Surrey</h1>
       {!mapSrc && (
         <div className="w-16 h-16 border-8 border-gray-800 border-t-slate-200 rounded-full animate-spin z-20"></div>
       )}
 
-      <div
-        className={`z-20 transition-transform ${
-          mapSrc ? "animate-zoom-in" : ""
-        }`}
-      >
-        <iframe
-          width="600"
-          height="450"
-          style={{ border: 0 }}
-          loading="lazy"
-          allowFullScreen
-          src={mapSrc}
-        ></iframe>
-      </div>
+      <iframe
+        className="z-20"
+        width="600"
+        height="450"
+        style={{ border: 0 }}
+        loading="lazy"
+        allowFullScreen
+        src={mapSrc}
+      ></iframe>
 
       <Particles
         className="z-10"
