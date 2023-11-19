@@ -6,8 +6,25 @@ function Form() {
   const [lastName, setLastName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
 
+  function handleSubmit(event) {
+    event.preventDefault();
+
+    fetch("https://localhost:5000", {
+      method: "POST",
+      body: JSON.stringify({
+        phoneNumber: phoneNumber,
+      }),
+      headers: {
+        "Content-type": "application/json; charset=UTF-8",
+      },
+    });
+  }
+
   return (
-    <form className="z-20 p-2 flex w-fit flex-col justify-center items-center gap-4 shadow-md shadow-gray-800 rounded-md pb-4 bg-[#8ecae6]">
+    <form
+      onSubmit={handleSubmit}
+      className="z-20 p-2 flex w-fit flex-col justify-center items-center gap-4 shadow-md shadow-gray-800 rounded-md pb-4 bg-[#8ecae6]"
+    >
       <h2 className="w-full font-bold text-white text-center text-2xl rounded-md p-4 bg-blue-400">
         Sign-Up
       </h2>
